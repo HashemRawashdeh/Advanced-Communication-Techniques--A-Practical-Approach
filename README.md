@@ -1,12 +1,9 @@
-<p align="justify">
-  
 # Advanced Communication Techniques: A Practical Approach
-This repository showcases a collection of advanced communication techniques, including AM communication, QAM modulation, and Huffman coding. Each short project demonstrates different aspects of digital and analog communication systems.
+<p align="justify">This repository showcases a collection of advanced communication techniques, including AM communication, QAM modulation, and Huffman coding. Each short project demonstrates different aspects of digital and analog communication systems.
 </p>
 
 ## Projects Overview
 ### GNU Radio AM Communication System Project Overview
-
 #### Introduction
 <p align="justify">
 This section of the repository focuses on an AM (Amplitude Modulated) communication system designed using GNU Radio. The project demonstrates the effective transmission and demodulation of audio signals, highlighting the application of various signal processing techniques to maintain signal integrity and quality.
@@ -105,4 +102,4 @@ Once the index tree is established, the Huffman Code Generator algorithm assigns
 The efficiency of the Huffman coding algorithm improves as the size of the n-grams increases, demonstrating its effectiveness in compressing data with increasing complexity.
 ![Efficiency VS gram number for Huffman algorithm](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/Huffman/EfficiencyVsGramNumber.png)
 
-For detailed explanations of the algorithm's design, operational mechanics, and performance analysis, please refer to the [Project report](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/Huffman/DigitalCommunicationsProject.pdf) and review the  [MATLAB live editor file.](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/Huffman/Huffman.mlx)
+For detailed explanations of the algorithm's design, operational mechanics, and performance analysis, please refer to the [Project report](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/Huffman/DigitalCommunicationsProject.pdf) and review the  [`Huffman.mlx`](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/Huffman/Huffman.mlx) MATLAB live editor file.
