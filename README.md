@@ -79,3 +79,30 @@ At high SNR, the output closely resembles the input signal, illustrating near-pe
 </p>
 
   ![BER Plot](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/QAM64_Simulink/BER.png)
+
+## Designing and simulating an algorithm for n-gram Huffman source codes using MATLAB
+### Huffman Coding Project Overview
+
+#### Introduction
+This section of the repository introduces a Huffman coding algorithm, a source coding method used to perform efficient data compression. The algorithm's design facilitates the generation of a compact, variable-length code for each character of the input data, optimizing the overall size of the encoded data.
+
+#### Algorithm Design
+The Huffman coding process utilized in this project is systematically broken down into a sequence of steps that generate the Huffman codes based on the probabilities of occurrence of input characters.
+
+![Designed Algorithm Flowchart](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/Huffman/DesignedAlgorithm.png)
+
+##### Probabilities Index Tree Generator
+The process starts by creating an index tree that helps in organizing the probabilities of the characters into a structured format that aids in subsequent code generation steps. This index tree is crucial for maintaining the hierarchical nature of Huffman coding.
+
+![Probabilities Index Tree Generator](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/Huffman/IndexTreeGenerator.png)
+
+##### Huffman Code Generator
+Once the index tree is established, the Huffman Code Generator algorithm assigns binary codes to each character. These codes are generated such that frequently occurring characters have shorter codes, thereby reducing the average code length and achieving compression.
+
+![Huffman Code Generator](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/Huffman/HuffmanCodeGenerator.png)
+
+#### Huffman Coding Performance
+The efficiency of the Huffman coding algorithm improves as the size of the n-grams increases, demonstrating its effectiveness in compressing data with increasing complexity.
+![Efficiency VS gram number for Huffman algorithm](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/Huffman/EfficiencyVsGramNumber.png)
+
+For detailed explanations of the algorithm's design, operational mechanics, and performance analysis, please refer to the [Project report](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/Huffman/DigitalCommunicationsProject.pdf) and review the  [MATLAB live editor file.](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/Huffman/Huffman.mlx)
