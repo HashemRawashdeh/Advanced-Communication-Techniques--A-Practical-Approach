@@ -2,45 +2,44 @@
 <p align="justify">This repository showcases a collection of advanced communication techniques, including AM communication, QAM modulation, and Huffman coding. Each short project demonstrates different aspects of digital and analog communication systems.
 </p>
 
-## Projects Overview
-### GNU Radio AM Communication System Project Overview
-#### Introduction
+## GNU Radio AM Communication System Project Overview
+### Introduction
 <p align="justify">
 This section of the repository focuses on an AM (Amplitude Modulated) communication system designed using GNU Radio. The project demonstrates the effective transmission and demodulation of audio signals, highlighting the application of various signal processing techniques to maintain signal integrity and quality.
 </p>
 
 ![System Flowgraph](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/AM_GNU%20Radio/SystemFlowgraph.png)
-#### Video Demonstration
+### Video Demonstration
 **[Watch the Full Demonstration on YouTube](https://www.youtube.com/watch?v=IMwchtWIwZs)** This video provides an overview of the setup, execution, and results, showcasing the practical application of AM communication.
 
-#### System Design and Key Parameters
+### System Design and Key Parameters
 - **Interpolation and Decimation**: <p align="justify">The system employs an interpolation factor of 16 at the transmitter side to increase the sampling rate from the original 48 kHz of the input WAV file to 768 kHz. This upscaling is crucial for matching the higher sample rate required for the subsequent modulation and processing stages. Correspondingly, at the receiver, a decimation factor of 16 is used to bring the sample rate back down to 48 kHz, ensuring the output audio matches the original sampling characteristics.</p>
 
 - **Filtering Techniques**: 
   - **Band-pass Filter**: <p align="justify">Customized with a low cutoff frequency of 1 kHz and a high cutoff frequency of 25 kHz, this filter is instrumental in limiting the bandwidth and removing unnecessary frequency components from the signal, which is critical for enhancing the quality of demodulation.</p>
   - **Interpolating FIR Filter**: <p align="justify">Utilizes taps defined in the taps block for precise filtering requirements during the interpolation process, aiding in the suppression of aliasing and preserving the integrity of the audio signal within the desired bandwidth.</p>
 
-#### Demonstrations
+### Demonstrations
 - **Short Demo**: A quick look at the key functionalities of the communication system:
   ![Short Demo GIF](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/AM_GNU%20Radio/ShortestPossibleDemo.gif)
 
 - **Full Demonstration**: For a comprehensive demonstration, including detailed simulations with audio from diverse set of songs, and additional insights into system performance, visit the project's [YouTube video](https://www.youtube.com/watch?v=IMwchtWIwZs).
 
-### QAM64 Simulink Communication System Project Overview
+## QAM64 Simulink Communication System Project Overview
 
-#### Introduction
+### Introduction
 <p align="justify">
 This section of the repository delves into a 64-QAM (Quadrature Amplitude Modulation) communication system modeled using Simulink. The project explores the modulation and demodulation processes under varying signal-to-noise ratio (SNR) conditions, demonstrating the robustness and efficiency of the system in handling high-density signal environments.
 </p>
 
 ![Block Diagram](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/QAM64_Simulink/BlockDiagram.png)
 
-#### System Design and Key Parameters
+### System Design and Key Parameters
 The QAM64 system incorporates several key signal processing blocks that enhance its performance:
 - **Modulation and Demodulation**: Utilizes 64-QAM for high data rate transmission, allowing efficient use of the spectrum.
 - **AWGN Channel**: Simulates real-world noise conditions to test the system's performance across different SNRs.
 
-#### Signal Analysis and Demonstrations
+### Signal Analysis and Demonstrations
 - **SNR Variations**: Three discrete simulations showcase system behavior at low (0 dB), medium (10 dB), and high (20 dB) SNR levels.
 - **Signal Snapshots**: Visualization of the modulation process and noise impact through a 'sparkline' plot, demonstrating the signal integrity at different SNR levels.
 
@@ -80,27 +79,26 @@ At high SNR, the output closely resembles the input signal, illustrating near-pe
   ![BER Plot](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/QAM64_Simulink/BER.png)
 
 ## Designing and simulating an algorithm for n-gram Huffman source codes using MATLAB
-### Huffman Coding Project Overview
 
-#### Introduction
+### Introduction
 This section of the repository introduces a Huffman coding algorithm, a source coding method used to perform efficient data compression. The algorithm's design facilitates the generation of a compact, variable-length code for each character of the input data, optimizing the overall size of the encoded data.
 
-#### Algorithm Design
+### Algorithm Design
 The Huffman coding process utilized in this project is systematically broken down into a sequence of steps that generate the Huffman codes based on the probabilities of occurrence of input characters.
 
 ![Designed Algorithm Flowchart](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/Huffman/DesignedAlgorithm.png)
 
-##### Probabilities Index Tree Generator
+### Probabilities Index Tree Generator
 The process starts by creating an index tree that helps in organizing the probabilities of the characters into a structured format that aids in subsequent code generation steps. This index tree is crucial for maintaining the hierarchical nature of Huffman coding.
 
 ![Probabilities Index Tree Generator](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/Huffman/IndexTreeGenerator.png)
 
-##### Huffman Code Generator
+### Huffman Code Generator
 Once the index tree is established, the Huffman Code Generator algorithm assigns binary codes to each character. These codes are generated such that frequently occurring characters have shorter codes, thereby reducing the average code length and achieving compression.
 
 ![Huffman Code Generator](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/Huffman/HuffmanCodeGenerator.png)
 
-#### Huffman Coding Performance
+### Huffman Coding Performance
 The efficiency of the Huffman coding algorithm improves as the size of the n-grams increases, demonstrating its effectiveness in compressing data with increasing complexity.
 ![Efficiency VS gram number for Huffman algorithm](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/Huffman/EfficiencyVsGramNumber.png)
 
