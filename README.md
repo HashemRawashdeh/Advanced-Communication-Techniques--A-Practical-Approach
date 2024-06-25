@@ -37,13 +37,20 @@ The QAM64 system incorporates several key signal processing blocks that enhance 
 - **AWGN Channel**: Simulates real-world noise conditions to test the system's performance across different SNRs.
 
 ### Signal Analysis and Demonstrations
-- **SNR Variations**: Three discrete simulations showcase system behavior at low (0 dB), medium (10 dB), and high (20 dB) SNR levels.
-- **Signal Snapshots**: Visualization of the modulation process and noise impact through a 'sparkline' plot, demonstrating the signal integrity at different SNR levels.
+- **SNR Variations**: Three discrete simulations showcase system behavior at low (0 dB), medium (10 dB), and high (25 dB) SNR levels.
+- **Signals Snapshots**: Visualization of the modulation process and noise impact through a sparklines plot.
 
   ![Signal Snapshots at Medium SNR](https://github.com/HashemRawashdeh/Advanced-Communication-Techniques--A-Practical-Approach/blob/main/QAM64_Simulink/SignalsMediumSNR.png)
-
 ### Input/Output Signal Integrity Analysis
-<p align="justify">This subsection shows visual comparisons of original and demodulated messages at varying SNR conditions—low, medium, and high. These images demonstrate the QAM64 system's performance in mitigating noise and preserving data integrity under diverse noise environments. Note that this subsection shows the extremes to get how significant the effect of noise can be. 0 SNR is way too bad and unrealistic but the extremes convey concepts better so they stand. Various practical values will be shown in the upcoming subsections evaluated by BER performance. </p>
+<p align="justify">This subsection shows visual comparisons of original and demodulated messages at varying SNR conditions—low (0 dB), medium (10 dB), and high (25 dB). These images demonstrate the 64-QAM system’s performance in mitigating noise and preserving data integrity under diverse noise environments. Note that this subsection shows the extremes as well as practical values to get how significant the effect of noise can be. 0 dB SNR is way too bad and unrealistic but the extremes convey concepts better so they stand. 
+
+In practical wireless communication systems, typical SNR values for 64-QAM range from 20 dB to 30 dB. For instance:
+- **Wi-Fi (802.11):** 20-25 dB
+- **LTE/5G:** 25-30 dB
+- **Broadcast and Satellite Communication:** 25-30 dB or higher for high-quality service.
+
+These practical values will be shown in the upcoming subsections evaluated by BER performance.</p>
+
 
 #### Low SNR Condition
 <p style="text-align: justify;">
